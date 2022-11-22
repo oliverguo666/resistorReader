@@ -6,21 +6,21 @@ const Register = () => {
         <div className="registerContainer">
             <div className="registerContent">
                 <div className="nameInputContainer">
-                    <label>First Name</label>
+                    <label>User Name</label>
                     <br/>
                     <input
                         type="string"
                         className="nameInput"
-                        placeholder="Enter first name"
+                        placeholder="Enter user name"
                     />
                     <br/>
-                    <label>Last Name</label>
-                    <br/>
-                    <input
-                        type="string"
-                        className="nameInput"
-                        placeholder="Enter last name"
-                    />
+                    {/*<label>Last Name</label>*/}
+                    {/*<br/>*/}
+                    {/*<input*/}
+                    {/*    type="string"*/}
+                    {/*    className="nameInput"*/}
+                    {/*    placeholder="Enter last name"*/}
+                    {/*/>*/}
                 </div>
                 <div className="emailInputContainer">
                     <label>Email address</label>

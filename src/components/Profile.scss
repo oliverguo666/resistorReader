@@ -1,0 +1,18 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  .wide-cardHeader {
+    padding: 7vh;
+    background-color: #f3f3f3;
+    border: 1px grey solid;
+    margin-bottom: 4vh;
+    .history{
+      text-decoration: none;
+      padding: 0 9vh;
+    }
+  }
+}
