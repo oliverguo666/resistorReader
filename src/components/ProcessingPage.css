@@ -31,6 +31,19 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+.processingContainer .processingImg {
+  display: flex;
+}
+.processingContainer .processingImg .imageShown {
+  width: 40vw;
+  border-radius: 40px;
+}
+.processingContainer .processingImg .imgButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 4vw;
+}
 .processingContainer .getResultButton .getResult {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 8px;

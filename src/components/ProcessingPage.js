@@ -16,6 +16,17 @@ const ProcessingPage = () => {
                     +
                 </button>
             </div>
+            <div className="processingImg">
+                <img
+                    className='imageShown'
+                    src="https://static4.arrow.com/-/media/arrow/images/miscellaneous/0/0916-resistor-color-code-main.jpg?mw=734&hash=C01919193FEF22D4CD7A974A4141C1D4" alt="img"/>
+                <div className="imgButtons">
+
+                    <button>remove</button>
+                    <button>edit</button>
+                </div>
+
+            </div>
             <div className="getResultButton">
                 <button
                     onClick={routeChange}

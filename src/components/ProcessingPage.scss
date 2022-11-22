@@ -31,6 +31,21 @@
       touch-action: manipulation;
     }
   }
+  .processingImg{
+    display: flex;
+     .imageShown{
+       width: 40vw;
+       border-radius: 40px;
+     }
+    .imgButtons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 4vw;
+
+    }
+  }
+
   .getResultButton {
     .getResult{
       background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);

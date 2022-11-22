@@ -4,8 +4,10 @@ const Result = () => {
 
     return(
         <>
-            <div className="processingContainer">
-                Result page
+            <div className="resultContainer">
+                <img
+                    className='imageShown'
+                    src="resistor.jpeg" alt="img"/>
             </div>
         </>
     )
