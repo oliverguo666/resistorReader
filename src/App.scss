@@ -1,0 +1,33 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #f3f3f3;
+  height: 10vh;
+
+  ul {
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    text-decoration: none;
+    align-items: center;
+    align-content: center;
+    li {
+      text-decoration: none;
+      display: inline-block;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+
+
+
+}

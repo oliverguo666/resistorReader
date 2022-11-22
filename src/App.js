@@ -1,25 +1,85 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link, useNavigate
+} from "react-router-dom";
+import LogIn from "./components/LogIn";
+import ProcessingPage from "./components/ProcessingPage";
+import Result from "./components/Result";
+import Register from "./components/Register";
+import History from "./components/History";
+import Profile from "./components/Profile";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // return (
+  //       <div className="App">
+  //    </div>
+  //  );
+    const auth = localStorage.getItem('user')
+    const navigate = useNavigate()
+    const logout = () => {
+        localStorage.clear();
+        navigate('./Register')
+    }
+
+    return (
+        <>
+            <nav>
+                <ul>
+                    <li className='navItem'>
+                        <Link to="/">Home</Link>
+                    </li>
+                    {
+                        auth ? <>
+                                <li className='navItem'>
+                                    <Link to="/Profile">Profile</Link>
+                                </li>
+                                <li className='navItem'>
+                                <Link
+                                    onClick={logout}
+                                    to="/">LogOut</Link>
+                            </li></>
+
+
+                               : <>
+                                <li className='navItem'>
+                                    <Link to="/LogIn">LogIn</Link>
+                                </li>
+                                <li className='navItem'>
+                                    <Link to="/Register">Register</Link>
+                                </li>
+                            </>
+
+
+
+                    }
+
+                </ul>
+            </nav>
+            <Routes>
+                <Route exact path="/" element={<Home />}></Route>
+                <Route path="/LogIn" element={<LogIn />}></Route>
+                <Route path="/processing" element={<ProcessingPage />}></Route>
+                <Route path="/Result" element={<Result />}></Route>
+                <Route path="/Register" element={<Register />}></Route>
+                <Route path="/History" element={<History />}></Route>
+                <Route path="/Profile" element={<Profile />}></Route>
+
+
+                {/*<Route path="/dashboard">*/}
+                {/*    <Dashboard />*/}
+                {/*</Route>*/}
+            </Routes>
+        </>
+
+
+
+
+    );
+
 }
 
 export default App;
