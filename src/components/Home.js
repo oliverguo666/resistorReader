@@ -64,7 +64,7 @@ const Home = () => {
                         <button
                             onClick={handleClick}
                             className="imgButton">
-                            upload a image
+                            upload an image
                         </button>
                         <button
                             onClick={routeChange}
