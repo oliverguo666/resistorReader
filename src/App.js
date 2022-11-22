@@ -40,13 +40,13 @@ function App() {
                                 <li className='navItem'>
                                 <Link
                                     onClick={logout}
-                                    to="/">LogOut</Link>
+                                    to="/">Logout</Link>
                             </li></>
 
 
                                : <>
                                 <li className='navItem'>
-                                    <Link to="/LogIn">LogIn</Link>
+                                    <Link to="/LogIn">Login</Link>
                                 </li>
                                 <li className='navItem'>
                                     <Link to="/Register">Register</Link>

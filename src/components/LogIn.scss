@@ -51,7 +51,14 @@
       -webkit-user-select: none;
       touch-action: manipulation;
     }
+
+  }  @media (min-width: 768px) {
+    .emailInput .passwordInput .submitButtonContainer{
+      width: 400px;
+    }
+
   }
+
 }
 
 

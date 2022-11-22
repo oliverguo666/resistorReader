@@ -54,7 +54,7 @@ const Home = () => {
                 {/*</div>*/}
 
                 <div className="homeContent">
-                    <h2>upload your image below</h2>
+                    <h2>Upload your image below</h2>
                     <div className="fileContainer">
                         <input
                             style={{display: 'none'}}
@@ -64,12 +64,12 @@ const Home = () => {
                         <button
                             onClick={handleClick}
                             className="imgButton">
-                            upload an image
+                            Upload an image
                         </button>
                         <button
                             onClick={routeChange}
                             className="imgButton">
-                            take a picture
+                            Take a picture
                         </button>
                     </div>
 

@@ -1,12 +1,16 @@
 import "./LogIn.scss"
+import {useNavigate} from "react-router-dom";
 
 
 const LogIn = () => {
-
+    let navigate = useNavigate();
     const SignIn = () => {
         localStorage.user = true;
-        window.location.reload();
+        // window.location.reload();
+        let path = `/Profile`;
+        navigate(path);
     }
+
 
 
     return (

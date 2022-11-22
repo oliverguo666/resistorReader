@@ -57,10 +57,12 @@
     flex-direction: column;
     align-items: center;
     h2{
+      color: #383e45;
       padding: 30px;
       text-align: center;
       font-size: 40px;
-      font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      //font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
     }
     .fileContainer{
       display: flex;
@@ -96,9 +98,13 @@
       }
 
       @media (min-width: 768px) {
-        .button-36 {
-          padding: 0 2.6rem;
+        //.button-36 {
+        //  padding: 0 2.6rem;
+        //}
+        .imgButton{
+          width: 300px;
         }
+
       }
     }
   .homeFooter {
