@@ -32,5 +32,8 @@ nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
 }
+nav ul .icon {
+  padding: 0 4vw;
+}
 
 /*# sourceMappingURL=App.css.map */

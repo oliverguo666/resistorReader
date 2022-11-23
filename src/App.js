@@ -1,7 +1,7 @@
 import './App.css';
 import Home from "./components/Home";
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import {
-    BrowserRouter as Router,
     Routes,
     Route,
     Link, useNavigate
@@ -56,8 +56,10 @@ function App() {
 
 
                     }
+                    <div className="icon"> <HelpOutlineIcon/></div>
 
                 </ul>
+
             </nav>
             <Routes>
                 <Route exact path="/" element={<Home />}></Route>
