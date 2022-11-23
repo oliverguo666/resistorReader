@@ -17,7 +17,15 @@ const History = () => {
   };
   return (
     <>
+
       <div className="historyListContainer">
+        <h2>History</h2>
+        <div className="imgContainer">
+          <button> &lt; </button>
+          <img src="resistor.jpeg" alt=""/>
+          <button> &gt; </button>
+        </div>
+        <div className="buttonContainer">
         <div className="historyButtons">
           <button onClick={routeChange}>resistor0.jpeg</button>
         </div>
@@ -36,6 +44,7 @@ const History = () => {
         <div className="historyButtons">
           <button onClick={routeChange}>resistor5.jpeg</button>
         </div>
+      </div>
       </div>
     </>
   );

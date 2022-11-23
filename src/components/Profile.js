@@ -9,8 +9,8 @@ const Profile = () => {
                 <div className="wide-cardHeader">
                     <h2>Personal Information</h2>
                     <span className="wide-card__header__action">
-                        <button id="account-change-btn" className="btn-link">update</button>
                     </span>
+                    <br/>
 
                 <div className="wide-card__body">
                     <div className="user-info">
@@ -21,10 +21,11 @@ const Profile = () => {
                     </div>
                 </div>
                     </div>
-            <div className="wide-cardHeader">
-                <h2><Link to="/History"
+            <div className="BtnContainer">
+                <button><Link to="/History"
                 className='history'
-                >History</Link></h2>
+                >History</Link></button>
+                <button>Edit information</button>
             </div>
         </div>
         </>

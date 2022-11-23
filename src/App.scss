@@ -9,10 +9,10 @@ nav {
   ul {
     height: 10vh;
     margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 0 5vw;
     font-size: 30px;
     text-decoration: none;
     align-items: center;
@@ -24,7 +24,8 @@ nav {
     li {
       text-decoration: none;
       display: inline-block;
-
+      padding: 0 5vw;
+      font-size: smaller;
 
       a{
         text-decoration: none;
