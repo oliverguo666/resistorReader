@@ -60,6 +60,12 @@
   font-size: 40px;
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
+.homeContainer .homeContent p {
+  color: #75828d;
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+}
 .homeContainer .homeContent .fileContainer {
   display: flex;
   flex-direction: column;

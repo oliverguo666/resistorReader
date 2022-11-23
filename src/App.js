@@ -56,7 +56,7 @@ function App() {
 
 
                     }
-                    <div className="icon"> <HelpOutlineIcon/></div>
+                    {/*<div className="icon"> <HelpOutlineIcon/></div>*/}
 
                 </ul>
 

@@ -54,6 +54,7 @@ const Home = () => {
 
         <div className="homeContent">
           <h2>Upload your image below</h2>
+          <p>Read value from your resistor color stripes.</p>
           <div className="fileContainer">
             <input
               style={{ display: "none" }}
